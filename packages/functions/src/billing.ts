@@ -10,6 +10,7 @@ export const main = handler(async (event) => {
 
     // Load our secret key
     const stripe = new Stripe(Config.STRIPE_SECRET_KEY, {
+        // @ts-ignore
         apiVersion: "2023-10-16",
     });
 
