@@ -38,7 +38,7 @@ export default function Home() {
         return !str ? "" : new Date(str).toLocaleString();
     }
 
-    function renderNotesList(notes: { [key: string | symbol]: any }) {
+    function renderNotesList(notes: Array<NoteType>) {
         return (
             <>
                 <LinkContainer to="/notes/new">
